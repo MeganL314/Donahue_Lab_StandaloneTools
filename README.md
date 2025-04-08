@@ -21,6 +21,7 @@ Kaplan Meier Plots with two groups - choose percentile to stratify (example: Med
 
 Paired Wilcox Test for multiple features. The output .csv has the structure:
 | feature | p value | median1 | median2 |
+|-----:|-----:|-----:|-----:|
 
 Visualization: box plots
 
