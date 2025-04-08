@@ -8,9 +8,31 @@ A collection of small scripts that address individual tasks or problems. Scripts
 Short descriptions of scripts within this repository:  
 
 <details>
-<summary> Example.R </summary>
+<summary> KaplanMeier_Stratified.R </summary>
 
-"Summary of script - example: Kaplan Meier Plots with two groups - grouped by percentile"
+"Kaplan Meier Plots with two groups - choose percentile to stratify (example: Median)"
 
 </details>
+
+
+
+<details>
+<summary> PairedWilcoxTest.R </summary>
+
+"Paired Wilcox Test for multiple features. The output .csv has the structure:
+[p value][median1][median2]
+
+"
+
+</details>
+
+
+
+<details>
+<summary> Example.R </summary>
+
+" Description "
+
+</details>
+
 
