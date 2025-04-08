@@ -12,29 +12,28 @@ Short descriptions of scripts within this repository:
 <details>
 <summary> KaplanMeier_Stratified.R </summary>
 
-Kaplan Meier Plots with two groups - choose percentile to stratify (example: Median)
+Kaplan Meier Plots with two groups - choose percentile to stratify (ex Median)
 
 The output .csv:
-| feature | p value | median |
+| feature | p value | cutoff |
 |-----:|-----:|-----:|
 
+**Visualization:** Kaplan Meier plot
 
 </details>
-
-
 
 
 
 <details>
 <summary> PairedWilcoxTest.R </summary>
 
-Paired Wilcox Test for multiple features.   
+Paired Wilcox Test for multiple features.
 
 The output .csv:
 | feature | p value | median1 | median2 |
 |-----:|-----:|-----:|-----:|
 
-**Visualization:** box plots
+**Visualization:** Box plot
 
 </details>
 
