@@ -5,7 +5,7 @@ A collection of small scripts that address individual tasks or problems. Scripts
 
 
 <details>
-<summary> .R </summary>
+<summary> Test.R </summary>
 
 "Summary of script"
 
