@@ -5,7 +5,7 @@ A collection of small scripts that address individual tasks or problems. Scripts
   
   
 
-Short descriptions of scripts within this repository:  
+Scripts within this repository:  
 
 
 
