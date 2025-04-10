@@ -25,9 +25,9 @@ The output .csv:
 
 
 <details>
-<summary> PairedWilcoxTest.R </summary>
+<summary> WilcoxonTest.R </summary>
 
-Paired Wilcox Test for multiple features.
+Paired Wilcoxon Test (or unpaired) for multiple features.
 
 The output .csv:
 | feature | p value | median1 | median2 |
