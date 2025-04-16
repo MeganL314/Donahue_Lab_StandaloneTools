@@ -33,19 +33,27 @@ The output .csv:
 | feature | p value | median1 | median2 |
 |-----:|-----:|-----:|-----:|
 
-**Visualization:** Box plot
+**Visualization:** Box plot w/ p value
+
+</details>
+
+
+<details>
+<summary> TimeSeries.R </summary>
+
+" Description "
 
 </details>
 
 
 
 
-
-
 <details>
-<summary> Example.R </summary>
+<summary> .R </summary>
 
-" Description "
+" Two common visualizations, perhaps to plot RNAseq pathway data "
+
+**Visualizations:** Heatmap and bubble plots
 
 </details>
 
