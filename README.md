@@ -44,9 +44,9 @@ Scripts within this repository:
 <details>
 <summary> TimeSeries_GridPlot.R </summary>
 
-**Description:** Creates a 2x2 grid with group-based coloring and optional axis breaks. Useful for visualizing trends across treatment groups.
+**Description:** Creates a 2x2 grid with group-based coloring and optional axis breaks. Useful for visualizing trends across treatment groups. *Coming soon.*
 
-**Visualization:** Line graph (2x2 grid layout)
+**Visualization:** Line graph (2x2 grid layout) *Coming soon.*
 
 </details>
 
