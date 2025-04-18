@@ -10,40 +10,43 @@ Scripts within this repository:
 
 
 <details>
-<summary> KaplanMeier_Stratified.R </summary>
+<summary> KM_StratifiedPlot.R </summary>
 
-Kaplan Meier Plots with two groups - choose percentile to stratify (ex Median)
+**Description:** Generates Kaplan-Meier survival curves for a list of features stratified by a chosen percentile cutoff (e.g. Median, upper 25th, etc.). Useful for survival analysis comparing these two user-defined groups.
 
-The output .csv:
+
+
+**The output .csv:**
 | feature | p value | cutoff |
 |-----:|-----:|-----:|
 
-**Visualization:** Kaplan Meier plot
+
+**Visualization:** Kaplan-Meier plot
 
 </details>
 
 
 
 <details>
-<summary> WilcoxonTest.R </summary>
+<summary> Wilcoxon_Test.R </summary>
 
-Paired Wilcoxon Test (or unpaired) for multiple features.
+**Description:** Paired Wilcoxon Test (or unpaired) for multiple features between two groups. Useful for identifying significantly different distributions.
 
-The output .csv:
+**The output .csv:**
 | feature | p value | median1 | median2 |
 |-----:|-----:|-----:|-----:|
 
-**Visualization:** Box plot w/ p value
+**Visualization:** Box plot with p-values
 
 </details>
 
 
 <details>
-<summary> TimeSeries.R </summary>
+<summary> TimeSeries_GridPlot.R </summary>
 
-Time series line graph in 2x2 grid. Group color options and axis break option.
+**Description:** Creates a 2x2 grid with group-based coloring and optional axis breaks. Useful for visualizing trends across treatment groups.
 
-**Visualization:** Line graph
+**Visualization:** Line graph (2x2 grid layout)
 
 </details>
 
@@ -53,9 +56,9 @@ Time series line graph in 2x2 grid. Group color options and axis break option.
 <details>
 <summary> Heatmap_BubblePlot.R </summary>
 
-Two common visualizations. *Coming soon.*
+**Description:** Generates heatmaps and bubble plots. Useful for exploring up/down regulation of pathways or other high-dimensional data. *Coming soon.*
 
-**Visualizations:** Heatmap and bubble plots
+**Visualizations:** Heatmap and bubble plots *Coming soon.*
 
 </details>
 
