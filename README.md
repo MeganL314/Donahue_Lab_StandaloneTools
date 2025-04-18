@@ -49,9 +49,9 @@ Time series line graph in 2x2 grid. Group color options and axis break option.
 
 
 <details>
-<summary> .R </summary>
+<summary> Heatmap_BubblePlot.R </summary>
 
-Two common visualizations. Coming soon.
+Two common visualizations. *Coming soon.*
 
 **Visualizations:** Heatmap and bubble plots
 
