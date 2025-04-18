@@ -41,7 +41,7 @@ The output .csv:
 <details>
 <summary> TimeSeries.R </summary>
 
-" Description "
+Time series line graph in 2x2 grid. Group color options and axis break option.
 
 </details>
 
@@ -51,7 +51,7 @@ The output .csv:
 <details>
 <summary> .R </summary>
 
-" Two common visualizations, perhaps to plot RNAseq pathway data "
+Two common visualizations. Coming soon.
 
 **Visualizations:** Heatmap and bubble plots
 
