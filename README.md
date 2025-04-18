@@ -43,6 +43,8 @@ The output .csv:
 
 Time series line graph in 2x2 grid. Group color options and axis break option.
 
+**Visualization:** Line graph
+
 </details>
 
 
