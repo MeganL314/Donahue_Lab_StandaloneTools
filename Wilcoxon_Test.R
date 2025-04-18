@@ -4,7 +4,7 @@ library(dplyr)
 # to create this, use the import feature in R studio
 
 library(readxl)
-rawdata <- read_excel("~/Documents/Help/Renee/Minnelide % PBMC.xlsx", sheet = "All % PBMC")
+rawdata <- read_excel("~/Path/To/Input/Data/.xlsx", sheet = "sheet1")
 
 
 custom_theme <- function() {
@@ -70,7 +70,7 @@ run_wilcoxon_summary <- function(dataframe, time_col, feature_cols, paired = TRU
 }
 results <- run_wilcoxon_summary(rawdata, "Timepoint", feature_list)
 
-write.csv(results, "~/Path/To/Results/.csv", row.names=FALSE)
+write.csv(results, "~/Path/To/Output/.csv", row.names=FALSE)
 
 
 
@@ -122,7 +122,7 @@ save_plots_pdf <- function(plots_list, output_path) {
   dev.off()
 }
 
-save_plots_pdf(to_plot, "~/Documents/Help/GitHub/BoxPlots.pdf")
+save_plots_pdf(to_plot, "~/Path/To/Output/BoxPlots.pdf")
 
 
 
