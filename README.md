@@ -56,9 +56,9 @@ Scripts within this repository:
 <details>
 <summary> Heatmap_BubblePlot.R </summary>
 
-**Description:** Generates heatmaps and bubble plots. Useful for exploring up/down regulation of pathways or other high-dimensional data. *Coming soon.*
+**Description:** Generates heatmaps and bubble plots. Useful for exploring up/down regulation of pathways or other high-dimensional data.
 
-**Visualizations:** Heatmap and bubble plots *Coming soon.*
+**Visualizations:** Heatmap and bubble plots
 
 </details>
 
