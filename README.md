@@ -62,7 +62,7 @@ A collection of small scripts that address individual tasks or problems. Scripts
 <details>
 <summary> CommonDataWrangling.R </summary>
 <br>
-**Description:** Summary of common data wrangling solutions: cleaning, preprocessing, shaping, formatting, etc. *Coming Soon*
+**Description:** Summary of common data wrangling solutions: cleaning, preprocessing, shaping, formatting, etc. Tidyverse and base R solutions. *Coming Soon*
 <br>
 <br>
 </details>
