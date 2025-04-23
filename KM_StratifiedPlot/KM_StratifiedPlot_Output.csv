@@ -1,4 +1,4 @@
-V1,V2,V3,V4
+feature,p value,median high,median low
 Analyte_1,0.00421258041265321,29.1,42.2
 Analyte_2,0.00724884533330829,32.3,43.9
 Analyte_3,0.722598543961957,42,36.3

@@ -166,7 +166,8 @@ results_list <- create_KM_plots(my_analytes, dataframe, outcome_time, outcome_ev
 
 dev.off()
 
-results <- cbind(results_list$feature_name, results_list$p_val_list, results_list$median_high, results_list$median_low)
+results <- cbind("feature" = results_list$feature_name, "p value" = results_list$p_val_list, 
+                 "median high" = results_list$median_high, "median low" = results_list$median_low)
 
 
 write.table(results, file = "./KM_StratifiedPlot/KM_StratifiedPlot_Output.csv", sep = ",", row.names = F, quote=F)
