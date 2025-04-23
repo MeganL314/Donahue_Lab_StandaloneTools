@@ -47,10 +47,10 @@ custom_theme <- function() {
 }
 
 ## load data
-dataframe <- read_excel("data.xlsx", sheet = "sheet1")
+dataframe <- read_excel("./KM_StratifiedPlot/KM_StratifiedPlot_FakeData_Input.xlsx", sheet = "Fake_Analyte_Data")
 
-## create list of analyte names using column names from dataframe
-list = names(dataframe[10:length(dataframe)])
+## create list o analyte names using column names from dataframe
+list = names(dataframe[5:length(dataframe)])
 
 
 ####################################################################################
@@ -87,12 +87,10 @@ create_labels <- function(data_for_labels, df_followup) {
 
 
 
-
-
 #################################################################################
 ################################ Set parameters #################################
 #################################################################################
-my_analytes = headers_character_unlist
+my_analytes = list
 dataframe = dataframe
 outcome_time = "followup"
 outcome_event = "dead"
@@ -138,12 +136,12 @@ create_KM_plots <- function(my_analytes, dataframe, outcome_time, outcome_event)
     ggsurv <- ggsurvplot(fit, data = stratify_df, risk.table = TRUE, pval = TRUE, 
                          title=paste(as.character(analyte), " Plot",sep = ""),
                          ggtheme = custom_theme(), pval.size = 5, legend.labs = legend_labels, 
-                         tables.y.text = FALSE, pval.coord = c(90, 0.2), palette = c("#ff9a90", "#00A170"))
+                         tables.y.text = FALSE, pval.coord = c(8, 0.2), palette = c("#ff9a90", "#00A170"))
     
     ggsurv$plot <- ggsurv$plot + guides(fill = guide_legend(nrow = 2), color = guide_legend(nrow = 2))
     
     ggsurv$plot <- ggsurv$plot + 
-      ggplot2::annotate("text", x=90, y=.14, label = label_c, size = 5, hjust=0, fontface=1) ## you will need to adjust coordinates (x=90 and y=0.14)
+      ggplot2::annotate("text", x=8, y=.1, label = label_c, size = 5, hjust=0, fontface=1) ## you will need to adjust coordinates (x=90 and y=0.14)
   
   
     print(ggsurv)
@@ -161,8 +159,8 @@ create_KM_plots <- function(my_analytes, dataframe, outcome_time, outcome_event)
 
 
 
-outfile_name = "ArmA"
-pdf(paste("/Path/To/Save/Plot/KM_Test_", outfile_name, ".pdf", collapse = ""))
+outfile_name = "KM_StratifiedPlot_Output"
+pdf(paste0("./KM_StratifiedPlot/", outfile_name, ".pdf", collapse = ""))
 
 results_list <- create_KM_plots(my_analytes, dataframe, outcome_time, outcome_event)
 
@@ -171,7 +169,7 @@ dev.off()
 results <- cbind(results_list$feature_name, results_list$p_val_list, results_list$median_high, results_list$median_low)
 
 
-write.table(results, file = "/Path/To/Save/csv/.csv", sep = ",", row.names = F, quote=F)
+write.table(results, file = "./KM_StratifiedPlot/KM_StratifiedPlot_Output.csv", sep = ",", row.names = F, quote=F)
 
 
 
