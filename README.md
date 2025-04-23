@@ -88,7 +88,14 @@ A collection of small scripts that address individual tasks or problems. Scripts
 <summary> Correlation.R </summary>
 <br>
   
-**Description:** *Coming soon*
+**Description:** Performs Spearman correlation between all variables in a feature list. *Coming soon*
+
+**The output .csv:**
+| feature | Spearman R | p value | 
+|-----:|-----:|-----:|
+
+**Visualization:** Scatter Plots of X vs. Y with R and p value annotated. *Coming soon*
+
 <br>
 <br>
 </details>
