@@ -14,6 +14,7 @@ A collection of small scripts that address individual tasks or problems. Scripts
 |-----:|-----:|-----:|
 
 **Visualization:** Kaplan-Meier plot
+
 <br>
 <br>
 </details>
@@ -30,9 +31,29 @@ A collection of small scripts that address individual tasks or problems. Scripts
 |-----:|-----:|-----:|-----:|
 
 **Visualization:** Box plot with p-values
+
 <br>
 <br>
 </details>
+
+
+<details>
+<summary> Wilcoxon_Paired_Complete_Cases.R </summary>
+<br>
+  
+**Description:** Performs a paired Wilcoxon signed-rank test after removing any incomplete pairs (if either value in a pair is NA, the entire pair is excluded)
+
+**The output .csv:**
+| p value | feature | groups | sample size | median1 | median2 |
+|-----:|-----:|-----:|-----:|-----:|-----:|
+
+<br>
+<br>
+</details>
+
+
+
+
 
 
 <details>
@@ -47,6 +68,8 @@ A collection of small scripts that address individual tasks or problems. Scripts
 </details>
 
 
+
+
 <details>
 <summary> Heatmap_BubblePlot.R </summary>
 <br>
@@ -59,10 +82,25 @@ A collection of small scripts that address individual tasks or problems. Scripts
 </details>
 
 
+
+
+<details>
+<summary> Correlation.R </summary>
+<br>
+  
+**Description:** *Coming soon*
+<br>
+<br>
+</details>
+
+
+
+
 <details>
 <summary> CommonDataWrangling.R </summary>
 <br>
-**Description:** Summary of common data wrangling solutions: cleaning, preprocessing, shaping, formatting, etc. Tidyverse and base R solutions. *Coming Soon*
+  
+**Description:** Summary of common data wrangling solutions: cleaning, preprocessing, shaping, formatting, etc. Tidyverse and base R solutions.
 <br>
 <br>
 </details>
