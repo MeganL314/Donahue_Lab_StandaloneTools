@@ -1,7 +1,7 @@
 ## Donahue_Lab_StandaloneTools
 ### Short, task-specific scripts  
 
-A collection of small scripts that address individual tasks or problems. Scripts in this repository are standalone and not part of a larger pipeline. Scripts in this repository:  
+A collection of small scripts that address individual tasks or problems. Scripts in this repository are standalone and not part of a larger pipeline.
 <br>
 <details>
 <summary> KM_StratifiedPlot.R </summary>
