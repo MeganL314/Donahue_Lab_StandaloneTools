@@ -4,7 +4,7 @@ library(dplyr)
 # to create this, use the import feature in R studio
 
 library(readxl)
-rawdata <- read_excel("./Wilcoxon_Test/.xlsx", sheet = "Fake_Paired_Analyte_Data")
+rawdata <- read_excel("./Wilcoxon_Test.xlsx", sheet = "fake_clinical_wilcoxon_dataset ")
 
 
 custom_theme <- function() {
@@ -27,8 +27,7 @@ custom_theme <- function() {
 }
 
 
-feature_list = colnames(rawdata[3:length(rawdata)])
-rawdata$`Timepoint (day)`
+feature_list = colnames(rawdata[7:(length(rawdata))])
 
 ## New column to group timepoints
 values <- c("pre", "post", "post", "post")
@@ -70,7 +69,7 @@ run_wilcoxon_summary <- function(dataframe, time_col, feature_cols, paired = TRU
 }
 results <- run_wilcoxon_summary(rawdata, "Timepoint", feature_list)
 
-write.csv(results, "~/Path/To/Output/.csv", row.names=FALSE)
+write.csv(results, "./Wilcoxon_Test_Output.csv", row.names=FALSE)
 
 
 
@@ -122,7 +121,7 @@ save_plots_pdf <- function(plots_list, output_path) {
   dev.off()
 }
 
-save_plots_pdf(to_plot, "~/Path/To/Output/BoxPlots.pdf")
+save_plots_pdf(to_plot, "Wilcoxon_Test_Output_BoxPlots.pdf")
 
 
 
