@@ -4,7 +4,7 @@ library(dplyr)
 # to create this, use the import feature in R studio
 
 library(readxl)
-rawdata <- read_excel("~/Path/To/Input/Data/.xlsx", sheet = "sheet1")
+rawdata <- read_excel("./Wilcoxon_Test/.xlsx", sheet = "Fake_Paired_Analyte_Data")
 
 
 custom_theme <- function() {

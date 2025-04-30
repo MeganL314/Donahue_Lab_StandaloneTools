@@ -83,6 +83,8 @@ print(example_temp)
 
 # base R
 sort_column <- "Priority"
+
+
 # Convert to factor with custom order
 example_df[[sort_column]] <- factor(example_df[[sort_column]], levels = c("Low", "Medium", "High"))
 # Sort
@@ -99,7 +101,19 @@ aggregate(CCL4_12w ~ Arm.assigned, data = dataframe, FUN = mean) # base R
 
 
 
+## New column to group timepoints
+# values <- c("pre", "post", "post", "post")
+# index <- c(0, 12, 13, 14)
+# rawdata$Timepoint <- values[match(rawdata$`Timepoint (day)`, index)]
 
+
+## Update value in place for specific columns
+## df[[column]][df[[column]] == "some_value"] <- "new_value"
+
+
+
+## Update column values but create new columns
+## df[["IL6_recode"]] <- ifelse(df[["IL6"]] == "high", "elevated", df[["IL6"]])
 
 
 ###############################################################
