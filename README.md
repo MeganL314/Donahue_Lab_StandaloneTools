@@ -114,7 +114,7 @@ A collection of small scripts that address individual tasks or problems. Scripts
 
 
 <details>
-<summary> PieCHarts.R </summary>
+<summary> PieCharts.R </summary>
 <br>
   
 **Description:** Pie chart representing the relative frequencies of unique CDR3 sequences.
@@ -125,6 +125,16 @@ A collection of small scripts that address individual tasks or problems. Scripts
 <br>
 
 
+<details>
+<summary> UpsetPlot.R </summary>
+<br>
+  
+**Description:** Uses complex upset to create upset plots showing differences in DEGs between treatment groups.
+
+<br>
+<br>
+</details>
+<br>
 
 
 
