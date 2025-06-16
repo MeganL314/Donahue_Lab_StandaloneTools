@@ -111,7 +111,19 @@ A collection of small scripts that address individual tasks or problems. Scripts
 <br>
 <br>
 </details>
+
+
+<details>
+<summary> PieCHarts.R </summary>
 <br>
+  
+**Description:** Pie chart representing the relative frequencies of unique CDR3 sequences.
+
+<br>
+<br>
+</details>
+<br>
+
 
 
 
