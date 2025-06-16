@@ -228,8 +228,8 @@ write.csv(intersection_counts, "./Path/To/Output/intersection_counts.csv", row.n
 
 
 
-contrast_order <- c("C_STAR_10nM_vs_isotype_10nM", "C_STAR_1nM_vs_isotype_1nM", "C_antiCD3_vs_media",
-                    "C_RSV_IL2_10nM_vs_isotype_10nM", "C_RSV_IL2_1nM_vs_isotype_1nM")
+contrast_order <- c("Example_10nM_vs_isotype_10nM", "Example_vs_isotype_1nM", "Example_vs_media",
+                    "Example_10nM_vs_isotype_10nM", "Example_1nM_vs_isotype_1nM")
 
 
 ### For help with formating plots - changing font size, order, etc.:
@@ -245,9 +245,9 @@ ht <- upset(
   intersect = rev(contrast_order),
   name = "Significant Contrasts",
   sort_intersections=FALSE,
-  intersections = list('C_STAR_10nM_vs_isotype_10nM','C_RSV_IL2_10nM_vs_isotype_10nM', 'C_antiCD3_vs_media',
-                       'C_STAR_1nM_vs_isotype_1nM', 'C_RSV_IL2_1nM_vs_isotype_1nM',
-                       c('C_STAR_10nM_vs_isotype_10nM', 'C_RSV_IL2_10nM_vs_isotype_10nM')),
+  intersections = list('Example_10nM','Example_10nM_vs_isotype_10nM', 'Example_vs_media',
+                       'Example_1nM_vs_isotype_1nM', 'Example_1nM_vs_isotype_1nM',
+                       c('Example_10nM_vs_isotype_10nM', 'Example_10nM_vs_isotype_10nM')),
   base_annotations = list(
     'Intersection size' = intersection_size(counts = TRUE, aes(fill = direction),
                                             text=list(size=2)) + ## adjust text size
